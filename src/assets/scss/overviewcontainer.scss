@@ -1,0 +1,59 @@
+.row{
+    display: grid;
+}
+@media (min-width:1440){
+    .OverviewContainer{
+        max-width: 1140px;
+    }
+}
+@media (min-width:1024){
+    .OverviewContainer{
+        max-width: 1140px;
+    }
+}
+@media (min-width:991){
+    .OverviewContainer{
+        max-width: 1140px;
+    }
+}
+@media (min-width:768px){
+    .row{
+        display: flex;
+    }
+}
+
+
+.OverviewContainer{
+    width: 100%;
+    padding-bottom: 51px;
+}
+.OverviewHeader{
+    text-align: center;
+    font-size: 48px;
+    padding-top: 94px;
+}
+.OverviewColumns{
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+.OverviewColumn{
+    max-width: 370px;
+    padding-bottom: 2%;
+    margin-top: 36px
+}
+.OverviewImage{
+    width: 64%;
+    height: 62%;
+    padding-right: 9px;
+    padding-bottom: 11px;
+}
+.AbilityDescription{
+    margin-top: -8px;
+    line-height: 23px;
+}
+.AbilityHeader{
+    margin-top: 23px;
+    font-size: 19.2px;
+    letter-spacing: -0.4px;
+}

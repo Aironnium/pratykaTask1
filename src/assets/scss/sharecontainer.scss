@@ -1,0 +1,115 @@
+$ShareBackground:url("../../assets/images/IphoneShare.png");
+
+.ShareContainer{
+    width: 100%;
+    height: 683px;
+    background-image: $ShareBackground;
+    margin-left: auto;
+    margin-right: auto;
+    background-position-x: -420px;
+}
+.ShareHeader{
+    color: white;
+    font-size: 46px;
+    letter-spacing: 0.7px;
+}
+.ShareDescription{
+    margin-top: -14px;
+    font-size: 16.1px;
+    color: white;
+    padding-bottom: 30px;
+    letter-spacing: 0.32px;
+}
+@media (min-width: 1px) {
+    .ShareSwiper{
+        width: 100%;
+        background-color: rgba(26, 26, 26, 0.5);
+        top: 18.5%;
+        width: 90%;
+        height: calc(34.325rem + -20.4vw);
+    }
+    .ShareHeader{
+        font-size: calc(1.325rem + 3.6vw);;
+    }
+}
+@media (min-width: 778px) {
+    .ShareSwiper{
+        background-color: rgba(26, 26, 26, 0);
+        top: 18.5%;
+        left: 26.7%;
+        width: 364px;
+        height:342px
+    }
+    .ShareContainer{
+        width: 100%;
+        background-image: $ShareBackground;
+        background-position-x: -388px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .ShareHeader{
+        font-size: 46px;
+    }
+}
+@media (min-width: 1024px) {
+    .ShareSwiper{
+        width: 41%;
+        top: 18.5%;
+        background-color: rgba(26, 26, 26, 0);
+        background-size: 100%;
+    }
+    .ShareContainer{
+        width: 100%;
+        background-image: $ShareBackground;
+        background-position-x: -1px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ShareSwiper{
+        width: 23.6%;
+        left: 12.4%;
+        top: 24.7%;
+        background-color: rgba(26, 26, 26, 0);
+    }
+    .ShareContainer{
+        width: 100%;
+        background-image: $ShareBackground;
+        background-position-x: -1px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.ShareSwiper{
+    display: grid;;
+    justify-content: left;
+    align-items:start;
+
+}
+.ShareSlideContainer{
+  justify-content: left;
+  align-items: center;
+}
+
+.ShareLittleDescription{
+    font-size: 15.1px;
+    color: white;
+    padding-left: 29px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    width: 250px;
+}
+.ShareSlideImage{
+    margin-left: 4px;
+    margin-top: 4.7px;
+    height: 85px;
+    width: 156px;
+}
+.SharePagination{
+    display: flex;
+}
+

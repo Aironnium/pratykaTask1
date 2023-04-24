@@ -1,0 +1,123 @@
+.CompatibilityContainer{
+    width: 100%;
+    height: 525px;
+    background-color: rgb(190, 190, 190);
+}
+.CompatibilityHeader{
+
+    padding-top: 81px;
+    font-size: 24px;
+    position: relative;
+}
+.CompatibilityLine{
+    margin: 1rem;
+    color: inherit;
+    border: 0;
+    border-top: 2px solid;
+    opacity: 0.25;
+
+
+}
+.CompatibilityColumns{
+    width: 930px;
+
+    position: relative;
+    top: 14px;
+}
+.CompatibilityColumnHeader{
+    font-size: 18px;
+}
+.CompatibilityColumnDescription{
+    bottom: 8px;
+    position: relative;
+    width: 400px;
+    font-size: 15px;
+    letter-spacing: -0.001px;
+}
+.iOSDevicesImage{
+    width: 34%;
+}
+.AndroidDevicesImage{
+    width: 80%;
+}
+
+@media(min-width:1px){
+    .CompatibilityHeader{
+        padding-left: 5%;
+        top:0px;
+    }
+    .CompatibilityLine{
+        margin-left: 5%;
+        width: 90%;
+        top:0px;
+    }
+    .CompatibilityColumns{
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        right: 600px;
+    }
+    .CompatibilityColumn{
+        position: relative;
+        width: 33.7%;
+    }
+    .CompatibilityColumnDescription{
+        width: 95%;
+    }
+    .AndroidDevicesImage{
+        width: 290px;
+    }
+}
+@media(min-width:778px){
+    .CompatibilityHeader{
+        padding-left: 5%;
+        top:0px;
+    }
+    .CompatibilityLine{
+        margin-left: 5%;
+        width: 700px;
+        top:0px;
+    }
+    .CompatibilityColumns{
+        right: 230px;
+    }
+    .CompatibilityColumn{
+        width: 70%;
+    }
+    .CompatibilityColumnDescription {
+        width: 95%;
+    }
+    .AndroidDevicesImage{
+        width: 80%;
+    }
+}
+@media(min-width:1024px){
+    .CompatibilityHeader{
+        padding-left: 10%;
+    }
+    .CompatibilityLine{
+        margin-left: 10%;
+        width: 902px;
+    }
+    .CompatibilityColumns{
+        left: 10%;
+        flex-direction: row;
+    }
+    .CompatibilityColumn{
+        width: 100%;
+    }
+    .CompatibilityContainer{
+        height: 413px;
+    }
+}
+@media(min-width:1440px){
+    .CompatibilityHeader{
+        padding-left: 25.7%;
+    }
+    .CompatibilityLine{
+        margin-left: 25.7%;
+    }
+    .CompatibilityColumns{
+        left: 25.7%;
+    }
+}

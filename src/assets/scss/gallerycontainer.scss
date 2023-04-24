@@ -1,0 +1,197 @@
+$TransformSlide: translateY(-80px);
+
+.GalleryContainer{
+    height: 700px;
+}
+.GalleryHeader{
+    color: #f06464;
+    margin-top: 65px;
+    position: relative;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+}
+.GalleryDescription{
+    margin-top: 17px;
+    width: 410px;
+    position: relative;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+}
+@media(min-width:1px){
+    .GalleryHeader{
+        text-align: center;
+    }
+    .GalleryDescription{
+        text-align: center;
+        width: 90%;
+        padding-left: 10%;
+    }
+    
+}
+
+@media(min-width:778px){
+    .GalleryHeader{
+        text-align: left;
+        padding-left: 100px;
+    }
+    .GalleryDescription{
+        text-align: left;
+        padding-left: 100px;
+        width: 650px;
+    }
+}
+@media(min-width:1024px){
+    .GalleryHeader{
+        padding-left: 200px;
+    }
+    .GalleryDescription{
+        padding-left: 200px;
+    }
+}
+@media(min-width:1440px){
+    .GalleryHeader{
+        padding-left: 476px;
+    }
+    .GalleryDescription{
+        padding-left: 479px;
+        width: 900px;
+    }
+    .PhotoSlide1{
+        width: 431px !important;
+    }
+    .PhotoSlide2{
+        width: 483px !important;
+    }
+    .PhotoSlide3{
+        width: 481px !important;
+        height: 482px;
+    }
+    .PhotoSlide4{
+        width: 485px !important;
+    }
+}
+.GallerySwiper{
+    top: 56px;
+    overflow-y: visible !important;
+}
+.PhotoSlide1:hover{
+    overflow: visible;
+}
+.PhotoSlide{
+    height: 482px;
+    transition: all 0.5s;
+}   
+
+.ImageInfo{
+    color: white;
+    display: flex;
+    padding-bottom: 15px;
+    padding-left: 28px;
+    letter-spacing: 0.4px;
+    background-color: black;
+    justify-content: space-between;
+    z-index: -1;
+    margin-top: -80px;
+    position: inherit;
+}
+
+@media(min-width:432px){
+    .ImageInfo{
+        margin-top: -128px;
+    }
+}
+@media(min-width:503px){
+    .ImageInfo{
+        margin-top: -104px;
+    }
+}
+@media(min-width:556px){
+    .ImageInfo{
+        margin-top: -80px;
+    }
+}
+@media(min-width:729px){
+    .PhotoSlide{
+        margin-top: 25px;
+    }
+}
+@media(min-width:850px){
+    .ImageInfo{
+        margin-top: -104px;
+    }
+    .PhotoSlide{
+        margin-top: 24px;
+    }
+}
+@media(min-width:913px){
+    .ImageInfo{
+        margin-top: -80px;
+    }
+    .PhotoSlide{
+        margin-top: 24px;
+    }
+}
+
+.ImageText{
+    padding-top: 25px;
+}
+.Likes{
+    color: #f06464;
+    display: grid;
+    padding-top: 26px;
+    letter-spacing: 5px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.LikesCount{
+    background-color: black;
+    color: #f06464;
+    border: 0px;
+    height: 20px;
+    text-align: left;
+    width: 60px;
+    margin-top: -31px;
+    font-size: 21px;
+    pointer-events: none
+}
+.LikeButton{
+    background-color: black;
+    color: #f06464;
+    border: 0px;
+    margin-left: -93px;
+    margin-top: -9px;
+    font-size: 23px;
+}
+.PhotoSlide1:hover .PhotoSlide{
+    transform: $TransformSlide;
+    transition: all 0.5s;
+}
+.PhotoSlide2:hover .PhotoSlide{
+    transform: $TransformSlide;
+    transition: all 0.5s;
+}
+.PhotoSlide3:hover .PhotoSlide{
+    transform: $TransformSlide;
+    transition: all 0.5s;
+}
+.PhotoSlide4:hover .PhotoSlide{
+    transform: $TransformSlide;
+    transition: all 0.5s;
+}
+
+.PhotoSlide1:hover .ImageInfo{
+    transition: all 3s;
+    z-index: 2;
+}
+.PhotoSlide2:hover .ImageInfo{
+    transition: all 3s;
+    z-index: 2;
+}
+.PhotoSlide3:hover .ImageInfo{
+    transition: all 3s;
+    z-index: 2;
+}
+.PhotoSlide4:hover .ImageInfo{
+    transition: all 3s;
+    z-index: 2;
+}

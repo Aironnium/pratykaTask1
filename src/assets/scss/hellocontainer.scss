@@ -1,0 +1,80 @@
+
+$HelloBackground:  url("../../assets/images/Iphone.png");
+
+.SlideContainer{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 732px;
+}
+.SlideHeader{
+    text-align: center;
+    color: white;
+    padding-top: 54px;
+    padding-right: 14.6px;
+    font-size: calc(1.325rem + 3.6vw);
+}
+.HelloContainer{
+    width: 100%;
+    height: 732px;
+    background: $HelloBackground;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.HelloContainerButton{
+    border-color: white;
+    color:white;
+    font-size: calc(1rem + 0.45vw);
+    border: 3px solid;
+    height: 74px;
+    width: calc(157.2px + 4.4vw);
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: rgba($color: #000000, $alpha: 0);
+}
+.buttonText{
+    vertical-align:middle;
+}
+.ContainerButtons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-right: 16px;
+    gap: 17px;
+    margin-top: 27px;
+}
+.HelloContainerButton:hover{
+    color: black;
+    background-color: white;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.imageButton1{
+    margin-top: 5px;
+    margin-right: 3px;
+}
+.imageButton1:hover{
+    padding-top: 2px;
+    color: black;
+}
+
+span.swiper-pagination-bullet  {
+    background-color: transparent;
+    width: 10px !important;
+    height: 10px !important;
+    border: 2px solid ;
+    border-color: white;
+    opacity: 1 ;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 1) ;
+    width: 10px ;
+    height: 10px ;
+}

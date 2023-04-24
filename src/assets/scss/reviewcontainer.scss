@@ -1,0 +1,111 @@
+.ReviewContainer{
+    width: 100%;
+    height: 210px;
+    background-color: rgb(211, 211, 211);
+}
+.ReviewHeader{
+    text-align: left;
+    position: relative;
+    padding-left: 20.7%;
+    top: 86px;
+    font-size: 17px;
+    letter-spacing: 0.1px;
+}
+.SubmitForm{
+    float: left;
+    position: relative;
+    top: -28px;
+
+    height: 45px;
+    border-radius: 5px;
+}
+.SubmitForm::placeholder{
+    left: 10px;
+}
+.SubmitButton{
+    position: relative;
+
+    top: 60px;
+    height: 46px;
+    width: 93px;
+    background: #f06464;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+label{
+    display: block;
+    padding-left: 1037px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    top: -27px;
+} 
+label, .SubmitForm{
+    margin: 0.4rem 0;
+}
+
+@media(min-width:1px){
+    .ReviewHeader{
+        padding-left: 1%;
+        top: 177px;
+        text-align: center;
+    }
+    .SubmitForm{
+        left: 15px;
+        width: 220px;
+    }
+    label{
+        padding-left: 25px;
+    }
+    .SubmitButton{
+        left: 240px;
+        width: 70px;
+    }
+}
+@media(min-width:778px){
+    .ReviewHeader{
+        padding-left: 5%;
+        top: 86px;
+        text-align: left;
+    }
+    .SubmitForm{
+        left: 370px;
+        width: 289px;
+    }
+    label{
+        padding-left: 370px;
+    }
+    .SubmitButton{
+        left: 665px;
+        width: 94px;
+    }
+}
+@media(min-width:1024px){
+    .ReviewHeader{
+        padding-left: 10%;
+    }
+    .SubmitForm{
+        left: 580px;
+    }
+    label{
+        padding-left: 585px;
+    }
+    .SubmitButton{
+        left: 874px;
+    }
+}
+@media(min-width:1440px){
+    .ReviewHeader{
+        padding-left: 20.7%;
+    }
+    .SubmitForm{
+        left: 1033px;
+    }
+    label{
+        padding-left: 1037px;
+    }
+    .SubmitButton{
+        left: 1335px;
+    }
+}

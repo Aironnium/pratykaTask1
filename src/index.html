@@ -1,0 +1,464 @@
+---
+layout: default
+title: ama
+---
+<!--Navbar-->
+  <nav class="navbar container navbar-expand-lg bg-body-tertiary fixed-top"  id="Navbar "style="z-index:9999">
+    <!--Logo of navbar-->
+    <a class="navbar-brand" href="#Hello">ama</a>
+    <!--Button? which causer a burger menu (works only when the width is not longer as 768px)-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Navbar links-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#Hello">Hello</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Share">Share</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Download">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Compatibility">Compatibility</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--Hello container with slides in center-->
+<div class="HelloContainer" id="Hello">
+  <!--Slider-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!--First slide with buttons-->
+        <div class="swiper-slide">
+          <div class="SlideContainer">
+            <h2 class="SlideHeader">
+              Capture and Share
+            </h2>
+            <br/>
+            <div class="ContainerButtons">
+              <!--Buttons in slider-->
+              <button class="HelloContainerButton">
+                <p class="buttonText"><img src="assets/images/Icon-AppStore.png" class="imageButton1"/>App store</p>
+              </button>
+              <button class="HelloContainerButton">
+                <p class="buttonText"><img src="assets/images/icon-PlayStore.png" class="imageButton1"/>Play store</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Second slider consists only text-->
+        <div class="swiper-slide">
+          <div class="SlideContainer">
+          <h2 class="SlideHeader">Glory to Ukraine</h2>
+        </div>
+        <!--The same third slide-->
+        </div>
+        <div class="swiper-slide">
+          <div class="SlideContainer">
+          <h2 class="SlideHeader">Loktar Ogar</h2>
+        </div>
+        </div>
+      </div>
+      <!--Pagination container-->
+      <div class="swiper-pagination" style="bottom: 45px;"></div>
+    </div>
+  
+    <!-- Initialize the first slider and that's pagination-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30, //the space between slides
+        effect:"fade", //effect of scrolling 
+        loop:true, //endless scrolling
+        fadeEffect:{
+          crossFade:true
+        },
+        centeredSlides: true, //shows the centered slides
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },//plays automatically duthng delay
+        speed:300, //the speed of scrolling
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        }, //initialize pagination
+      }); 
+    </script>
+</div>
+<!--Overview Container with colums and row-->
+    <div class="OverviewContainer" id="Overview">
+      <h2 class="OverviewHeader"> Why ama?</h2>
+      <div class="container text-center">
+        <!--Row-->
+        <div class="row align-items-end OverviewColumns">
+          <!--First column-->
+          <div class="col OverviewColumn">
+            <img class="OverviewImage" src="assets/images/Focus.png"/>
+            <h5 class="AbilityHeader">Auto focus</h5>
+            <p class="AbilityDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. </p>
+          </div>
+          <!--Second column-->
+          <div class="col OverviewColumn">
+            <img class="OverviewImage" src="assets/images/Touch ID.png"/>
+            <h5 class="AbilityHeader">Secured with Touch ID</h5>
+            <p class="AbilityDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. </p>
+          </div>
+          <!--Third column-->
+          <div class="col OverviewColumn">
+            <img  class="OverviewImage" src="assets/images/Filters.png"/>
+            <h5 class="AbilityHeader">Your Filters</h5>
+            <p class="AbilityDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Share container with responsive background and slider-->
+    <div class="ShareContainer" id="Share">
+      <!--Slider -->
+      <div class="swiper ShareSwiper">
+        <div class="swiper-wrapper">
+          <!--First slide wit content-->
+          <div class="swiper-slide ShareSlideContainer">
+            <h2 class="ShareHeader">Share instantly</h2>
+            <br>
+            <p class="ShareDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+            <div style="display: flex;">
+              <img class="ShareSlideImage" src="assets/images/Video.png">
+              <p class="ShareLittleDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar. </p>
+            </div>
+          </div>
+          <!--Second slide with content-->
+          <div class="swiper-slide ShareSlideContainer">
+            <h2 class="ShareHeader">Improve life</h2>
+            <br>
+            <p class="ShareDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+            <div style="display: flex;">
+              <img class="ShareSlideImage" src="assets/images/Video.png">
+              <p class="ShareLittleDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar. </p>
+            </div>
+          </div>
+          <!--Third slide with content-->
+          <div class="swiper-slide ShareSlideContainer">
+            <h2 class="ShareHeader">Go kill yourself</h2>
+            <br>
+            <p class="ShareDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+            <div style="display: flex;">
+              <img class="ShareSlideImage" src="assets/images/Video.png">
+              <p class="ShareLittleDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar. </p>
+            </div>
+          </div>
+        </div>
+        <!--Pagination of this slider-->
+        <div class="swiper-pagination SharePagination"></div>
+      </div>
+      <!--Initialize the Share slider and that's pagination-->
+      <script>
+        var swiper = new Swiper(".ShareSwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 10000000000000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        }); 
+      </script>
+    </div>
+    <!--Features container with responsive slider and background-->
+    <div class="FeaturesContainer" id="Features">
+      <div class="FeaturesContainerInfo">
+        <h2 class="FeaturesHeader">New Features</h2>
+        <p class="FeaturesMainInfo">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+        <!--Slider-->
+        <div class="swiper FeaturesSwiper">
+          <div class="swiper-wrapper">
+            <!--First slider with content (The next slides of this slider will be announced by empty comment, they have the same content)-->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+            <!---->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+            <!---->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+            <!---->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+            <!---->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+            <!---->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+            <!--The last slider-->
+            <div class="swiper-slide FeaturesSlideContainer">
+              <img src="assets/images/Brush.png" class="FeatureSwiperImage">
+              <h2 class="FeatureSwiperTitle">Color your photos</h2>
+              <p class="FeatureSwiperDescription">ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+            </div>
+          </div>
+          <!--Pagination-->
+          <div class="swiper-pagination FeaturesPagination"></div>
+        </div>
+        <!--Initialize slider and that's pagination-->
+        <script>
+          var swiper = new Swiper(".FeaturesSwiper", {
+            centeredSlides: true,
+            autoplay: {
+              delay: 100000000000,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          }); 
+          </script> 
+      </div>  
+    </div>
+    <!--Gallery container with responsive slider (The posibility of liking photos)-->
+    <div class="GalleryContainer" id="Gallery">
+      <h2 class="GalleryHeader">Taken with ama</h2>
+      <p class="GalleryDescription">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida</p>
+      <!--Gallery slider-->
+      <div class="swiper mySwiper GallerySwiper">
+        <div class="swiper-wrapper">
+          <!--the first slider-->
+          <div class="swiper-slide  PhotoSlide1">
+            <img src="assets/images/photo1.png" class="PhotoSlide"/>
+          <!-- The text appearing during the hover-->
+          <div class="ImageInfo">
+            <p class="ImageText">Mauris euismod ultrices</p>
+                <!--Like button-->
+            <div class="Likes">
+              <button  class="LikeButton" id="likebutton1">
+                <i class="fa-regular fa-heart LikeIcon"></i>
+              <input id="input1" type="number" class="LikesCount" value="23" name=""></input>
+                  <!--Initialize like posibility-->
+              <script>    
+                const likebutton1 = document.getElementById('likebutton1');
+                const input1 = document.getElementById('input1')
+                let counter1 = 0
+              
+                likebutton1.addEventListener('click',()=> {
+                    if( counter1 %2 === 0){
+                        input1.value = parseInt(input1.value)+1;
+                    }
+                    else if( counter1 %2 !== 0){
+                        input1.value = parseInt(input1.value)-1;
+                    }
+                    counter1++
+                })</script>
+            </button>
+            </div>
+          </div>
+          </div>
+              <!--The second slide-->
+          <div class="swiper-slide PhotoSlide2">
+            <img src="assets/images/Photo2.png" class="PhotoSlide "/>
+                      <!-- The text appearing during the hover-->
+            <div class="ImageInfo">
+              <p class="ImageText">Mauris euismod ultrices</p>
+                              <!--Like button-->
+              <div class="Likes">
+              <button id="likebutton2" class="LikeButton" >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <input id="input2" type="number" class="LikesCount" value="46" name=""></input>
+           <!--Initialize like posibility-->
+           <script>    
+                const likebutton2 = document.getElementById('likebutton2');
+                const input2 = document.getElementById('input2')
+                let counter2 = 0
+              
+                likebutton2.addEventListener('click',()=> {
+                    if( counter2 %2 === 0){
+                        input2.value = parseInt(input2.value)+1;
+                    }
+                    else if( counter2 %2 !== 0){
+                        input2.value = parseInt(input2.value)-1;
+                    }
+                    counter2++
+                })</script>   
+              <script type="text/javascript">
+                (function() {      
+                    emailjs.init('OBGpvVAnzIF-aMG4H');
+                })();
+              </script>
+              </div>
+            </div>
+          </div>
+              <!--The third slide-->
+          <div class="swiper-slide PhotoSlide3" >
+            <img src="assets/images/Photo3.png" class="PhotoSlide "style="width: 481px;"/>
+            <!-- The text appearing during the hover-->
+            <div class="ImageInfo">
+              <p class="ImageText">Mauris euismod ultrices</p>
+              <!--Like button-->
+              <div class="Likes">
+                <button id="likebutton3" class="LikeButton">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <input type="number" id="input3"  class="LikesCount" value="65" name=""></input>
+             <!--Initialize like posibility-->
+             <script>    
+                  const likebutton3 = document.getElementById('likebutton3');
+                  const input3 = document.getElementById('input3')
+                  let counter3 = 0
+                
+                  likebutton3.addEventListener('click',()=> {
+                      if( counter3 %2 === 0){
+                          input3.value = parseInt(input3.value)+1;
+                      }
+                      else if( counter3 %2 !== 0){
+                          input3.value = parseInt(input3.value)-1;
+                      }
+                      counter3++
+                  })</script>   
+              </div>
+            </div>
+          </div>
+              <!--The fourth slide-->
+          <div class="swiper-slide PhotoSlide4">
+            <img src="assets/images/Photo4.png" class="PhotoSlide "/>
+           <!-- The text appearing during the hover-->
+            <div class="ImageInfo">
+              <p class="ImageText">Mauris euismod ultrices</p>
+              <!--Like button-->
+              <div class="Likes">
+                <button id="likebutton4" class="LikeButton">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+                <input type="number" id="input4"  class="LikesCount" value="54" name=""></input>
+            <!--Initialize like posibility-->
+            <script>    
+                  const likebutton4 = document.getElementById('likebutton4'); //connect button with sctipt
+                  const input4 = document.getElementById('input4') //connect input form with script
+                  let counter4 = 0
+                
+                  likebutton4.addEventListener('click',()=> { //initialize the listener
+                      if( counter4 %2 === 0){ //if counter is odd
+                          input4.value = parseInt(input4.value)+1; //set like
+                      }
+                      else if( counter4 %2 !== 0){  //if not
+                          input4.value = parseInt(input4.value)-1; //remove one
+                      }
+                      counter4++ //add 1 to the counter after every clicking
+                  })</script>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Initialize slider with responsive slides-->
+      <script>
+        var swiper = new Swiper(".GallerySwiper", {
+          slidesPerView: 1,
+          breakpoints:{ // response slides
+            1:{
+              loop:true,
+              slidesPerView:1
+            },
+            432:{
+              loop:true,
+              slidesPerView:2
+            },
+            850:{
+              loop:true,
+              slidesPerView:3
+            },
+            1820:{
+              loop:false,
+              slidesPerView:4,
+              spaceBetween:0
+            }
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    </div>
+    <!--Download container with buttons-->
+    <div class="DownloadContainer" id="Download">
+      <h2 class="DownloadHeader1">Believe me,</h2>
+      <h2 class="DownloadHeader2"> you don't wanna miss this app.</h2>
+      <p class="DownloadDescription">- Newyork Times</p>
+      <!--Buttons-->
+      <div class="DownloadButtons">
+        <button class="HelloContainerButton" style="width: calc(122.2px + 6.2vw);">
+          <p class="buttonText"><img src="assets/images/Icon-AppStore.png" class="imageButton1"/>App store</p>
+        </button>
+        <button class="HelloContainerButton" style="width: calc(122.2px + 6.2vw);">
+          <p class="buttonText"><img src="assets/images/icon-PlayStore.png" class="imageButton1"/>Play store</p>
+        </button>
+      </div>
+      <!--Responsive images-->
+      <img src="assets/images/Background2.png" class="DownloadLogo"/>
+      <img src="assets/images/Shadow.png" class="DownloadLogoShadow"/>
+
+    </div>
+    <!--Compatiibility container with simple information-->
+    <div class="CompatibilityContainer" id="Compatibility">
+        <h3 class="CompatibilityHeader">Compatibility</h3>
+        <hr class="CompatibilityLine">
+        <div class="row align-items-end CompatibilityColumns">
+          <div class="col CompatibilityColumn">
+            <h5 class="CompatibilityColumnHeader">iOS</h5>
+            <p class="CompatibilityColumnDescription">Requires iOS 6.0 or later. Compatible with iPhone, iPad, and iPod touch. This app is optimized for iPhone 5</p>
+            <img src="assets/images/iOS devices.png" class="iOSDevicesImage">
+          </div>
+          <div class="col CompatibilityColumn">
+            <h5 class="CompatibilityColumnHeader" >Android</h5>
+            <p class="CompatibilityColumnDescription" >Compatible with Android KitKat 4.4 or later. <br/> Support for x86 devices (i.e. Samsung Galaxy Tab 3 10.1)</p>
+            <img src="assets/images/Android devices.png" class="AndroidDevicesImage">
+          </div>
+      </div>
+    </div>
+    <!--Review container with sending a subscribe form-->
+    <div class="ReviewContainer">
+      <h2 class="ReviewHeader">© 2014 ama. All Rights Reserved</h2>
+      <!--Button which sends form to my email-->
+      <button onclick="validateForm()" class="SubmitButton">Submit</button>
+      <label for="email">Subscribe our email newsletter</label>
+      <!--Input form for email-->
+      <input type="email" id="email_id" class="SubmitForm" placeholder="Your email" required/>
+    </div>
+  </div>

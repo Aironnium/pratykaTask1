@@ -1,0 +1,163 @@
+$FeaturesBackground: url('../../assets/images/Background.png');
+$DefaultShareSwiperWidth: 435px;
+
+.FeaturesContainer{
+    width: 100%;
+    height: 747px;
+    background-image :$FeaturesBackground;
+    margin-left: auto ;
+    margin-right: auto;
+    background-position-x: -669px;
+}
+
+.FeaturesHeader{
+    font-size: 47px;
+    color: white;
+    position: relative;
+    letter-spacing: 0.8px;
+}
+.FeaturesMainInfo{
+    font-size: 17px;
+    color: white;
+    line-height: 25px;
+    position: relative;
+    letter-spacing: -0.1px;
+}
+.FeaturesSwiper{
+    background-color: white;
+    display: flex;
+    width: $DefaultShareSwiperWidth;
+    height: 215px;
+    top: 210px;
+    right: 12.5%;
+    border-radius: 5px;
+}
+.FeaturesPagination{
+    background-color: #f06464;
+    display: flex;
+    padding-left: 28px;
+    gap: 0.5px;
+    bottom: 5px;
+    padding-bottom: 16px;
+    padding-top: 14px;
+    margin-bottom: -8px;
+}
+.FeatureSwiperImage{
+    display: flex;
+    left: 27px;
+    position: fixed;
+    top: 40px;
+    height: 83px;
+}
+.FeatureSwiperTitle{
+    left: 135px;
+    position: relative;
+    font-size: 18px;
+    top: 30px;
+    color: #f06464;
+}
+.FeatureSwiperDescription{
+    left: 138px;
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+    width: 242px;
+}
+@media (min-width: 1px) {
+    .FeaturesContainer{
+        width: 100%;
+        background-position-x: -831px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .FeaturesSwiper{
+        width: 90%;
+        right: -1%;
+    }
+    .FeatureSwiperDescription{
+        font-size: 13px;
+        padding-right: 100px;
+    }
+    .FeaturesHeader{
+        padding-top: 23px;
+        text-align: center;
+    }
+    .FeaturesMainInfo{
+        width: 86%;
+        margin-left: 8%;
+        background: rgba(0,0,0,0.2);
+    }
+}
+
+@media (min-width: 778px) {
+    .FeaturesContainer{
+        width: 100%;
+        background-position-x: -531px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .FeaturesHeader{
+        top: 131px;
+        left: 100px;
+        width: 50%;
+        text-align: left;
+    }
+    .FeaturesMainInfo{
+        top: 141px;
+        left: 100px;
+        width: 420px;
+        margin-left: 0%;
+        background-color: rgba(0,0,0,0);
+    }
+    .FeaturesSwiper{
+        left: 100px;
+        width: $DefaultShareSwiperWidth;
+        top: 188px;
+        float: left;
+    }
+    .FeatureSwiperDescription{
+        font-size: 15px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .FeaturesContainer{
+        width: 100%;
+        background-position-x: -430px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .FeaturesHeader{
+        left: 4.8%;
+        width: 70%;
+    }
+    .FeaturesMainInfo{
+        left: 5.2%;
+        width: 420px;
+    }
+    .FeaturesSwiper{
+        left: 5%;
+        width: $DefaultShareSwiperWidth;
+    }
+}
+
+@media (min-width: 1440px) {
+    .FeaturesContainer{
+        width: 100%;
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .FeaturesHeader{
+        left: 25.6%;
+        width: 70%;
+    }
+    .FeaturesMainInfo{
+        left: 25.8%;
+        width: 420px;
+    }
+    .FeaturesSwiper{
+        left: 26%;
+    }
+}
